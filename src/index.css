@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff75;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 1rem #c09e0775 inset;
+ }
+
+.grid-responsive{
+  max-width: 72%;
+  float:left;
+  margin-top: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 1rem;
+  place-self: center;
+}
+.marca {
+  padding: 1%;
+  text-align: left;
+  color:#fff;
+  background-color: rgb(64, 64, 90);
+}
+.item{
+  border: thin solid gray;
+  padding: 1rem;
+  border-radius: 3%;
+  transition: all 0.2s ;
+  font-size: 1.1em;
+  border-style: dashed;
+}
+.item:hover{
+  box-shadow: 0 0 1rem rgba(34, 34, 34, 0.678);
+  transform: scale(1.05);
+}
+.cart{
+  position: relative;
+  text-align:center;
+  margin-top: 0.5rem;
+  height: 170px;
+  width: 170px;
+  border: thin solid gray;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  border-radius: 3%;
+}
+.carrito{
+  position: sticky;
+  padding: 2rem;
+  padding-left: 3rem;
+  text-align: center;
+  max-width:auto;
+  box-shadow: 0 0 1rem #c09e0775 inset;
+  top:80px;
+  margin-top: 10px;
+  display:inline-block;
+}
+.x{
+  color:rgba(255, 100, 100, 0.74);
+  font-weight: bold;
+  border:transparent;
+  font-size: 15px;
+  background-color: transparent;
+  padding-left: 90%;
+}
+.elimina{
+  color:rgba(255, 100, 100, 0.74);
+  font-weight: bold;
+  font-size:20px;
+  border:transparent;
+  background-color:transparent;
+}
+.elimina:hover{
+color: red;
+}
+.sumar{
+  color:rgba(255, 100, 100, 0.74);
+  font-weight: bold;
+  font-size:20px;
+  border:transparent;
+  background-color:transparent;
+}
+.sumar:hover{
+color: red;
+}
+.x:hover{
+  color: red;
+}
+.logo-cart {
+  max-height: 70px;
+  max-width: 70px;
+}
+.clear{
+  color:rgba(255, 100, 100, 0.74);
+  font-weight: bold;
+  border:transparent;
+  background-color:transparent;
+}
+.clear:hover{
+  color: red;
+}
+@media (max-width:720px){
+  .grid-responsive{
+    max-width: 70%;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+.title-prod{
+  font-weight: bold;
+}
+.buscar{
+  margin-left:80%;
+  display:inline-block;
+  border-radius: 5px;
+  background-color: transparent;
+  color:#fff;
+  border: solid 1px rgb(128, 135, 231);
+  box-shadow: 5px 3px 5px rgb(91, 114, 129);
+}
